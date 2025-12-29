@@ -1,0 +1,6 @@
+[submodule "thirdparty/sam"]
+	path = thirdparty/sam
+	url = https://github.com/facebookresearch/segment-anything.git
+[submodule "thirdparty/nvdiffrast"]
+	path = thirdparty/nvdiffrast
+	url = https://github.com/NVlabs/nvdiffrast.git

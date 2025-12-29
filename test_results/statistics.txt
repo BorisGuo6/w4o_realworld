@@ -1,0 +1,14 @@
+Grasp Generation Statistics
+==============================
+num_grasps: 110
+score_mean: 0.5075856317173351
+score_std: 0.002462844679395191
+score_max: 0.5105435252189636
+score_min: 0.5011464357376099
+width_mean_mm: 55.254312977194786
+width_std_mm: 0.6527669793074838
+width_max_mm: 56.84547871351242
+width_min_mm: 54.28889021277428
+high_quality_grasps: 0
+medium_quality_grasps: 0
+low_quality_grasps: 110

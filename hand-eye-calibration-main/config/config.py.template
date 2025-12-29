@@ -1,0 +1,64 @@
+from pathlib import Path
+from datetime import datetime
+
+class HandToEyeCalibConfig:
+    '''Default configuration, modify only if you know what you are doing'''
+    # Paths to URDF and SRDF files
+    base_dir = Path(__file__).resolve().parent.parent
+    urdf_path = base_dir / "robots/xarm7/xarm7_description/xarm7.urdf"
+
+    '''Customizable parameters'''
+    # Path to the custom robot class
+    robot_class_rw = "XArm7RW"
+    robot_class_pk = "XArm7PK"
+    # Path to data saving directory
+    save_data_path = base_dir / "data" / "hand_to_eye_calib"
+    # Experiment name
+    exp_name = f"test_{datetime.now().strftime('%Y%m%d')}"
+    # Camera serial number, can be obtained from realsense viewer
+    serial_number = '251622065286'  # Example
+    # XArm IP address
+    robot_ip = '192.168.1.196' # Example
+    # Initial camera pose guess
+    initial_rotation = (0, 0, 0)  # Roll, Pitch, Yaw in degrees
+    initial_translation = (0, 0, 0)  # Translation in meters
+    # SAM params
+    sam_path = base_dir / "checkpoints/sam_vit_h_4b8939.pth" # Create checkpoints directory first
+    sam_type = "vit_h"
+
+class HandInEyeCalibConfig:
+    '''Default configuration, modify only if you know what you are doing'''
+    # Paths to URDF and SRDF files
+    base_dir = Path(__file__).resolve().parent.parent
+    urdf_path = base_dir / "robots/xarm7/xarm7_description/xarm7.urdf"
+
+    '''Customizable parameters'''
+    # Path to the custom robot class
+    robot_class_rw = "XArm7RW"
+    # Path to data saving directory
+    save_data_path = base_dir / "data" / "hand_in_eye_calib"
+    # Experiment name
+    exp_name = f"test_{datetime.now().strftime('%Y%m%d')}"
+    # XArm IP address
+    robot_ip = '192.168.1.196' # Example
+    # Chessboard size
+    calibration_board_size = (11, 8)  # Number of inner corners in the chessboard
+    square_size = 15  # Size of each square in mm
+    # Camera resolution
+    camera_resolution = (1280, 720)  # Width, Height in pixels
+
+class CameraIntrinsicCalibConfig:
+    '''Default configuration, modify only if you know what you are doing'''
+    # Default configuration, modify only if you know what you are doing
+    base_dir = Path(__file__).resolve().parent.parent
+    
+    '''Customizable parameters'''
+    # Path to data saving directory
+    save_data_path = base_dir / "data" / "camera_intrinsic_calib"
+    # Chessboard size (same as hand-eye calibration for consistency)
+    calibration_board_size = (11, 8)  # Number of inner corners
+    square_size = 15  # Size of each square in mm
+    # Camera resolution
+    camera_resolution = (1280, 720)  # Width, Height in pixels
+    # Minimum number of images required for calibration
+    min_calibration_images = 10

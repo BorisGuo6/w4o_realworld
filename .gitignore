@@ -1,0 +1,15 @@
+data/raw_data/valid.zip
+data/video_data/*.mp4
+data.zip
+
+# Large files to skip
+*.ply
+*.npy
+*.zip
+*.blend
+*.blend1
+*.ttm
+*.PTH
+*.stl
+*.obj
+*.html

@@ -1,0 +1,8 @@
+numpy
+Pillow
+scipy
+tqdm
+tensorboard
+open3d
+xlrd2
+pybullet

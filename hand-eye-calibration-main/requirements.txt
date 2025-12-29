@@ -1,0 +1,12 @@
+viser
+sapien==3.0.0.dev0
+tqdm
+loguru
+scipy
+pytorch_kinematics
+open3d
+pyrealsense2
+fpsample
+mplib
+pin==2.7.0
+xarm-python-sdk

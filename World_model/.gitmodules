@@ -1,0 +1,12 @@
+[submodule "3rdparty/Grounded-SAM-2"]
+	path = 3rdparty/Grounded-SAM-2
+	url = https://github.com/IDEA-Research/Grounded-SAM-2.git
+[submodule "3rdparty/RLBench"]
+	path = 3rdparty/RLBench
+	url = https://github.com/wbjsamuel/World4Omni.git
+[submodule "3rdparty/feature_based_icp"]
+	path = 3rdparty/feature_based_icp
+	url = https://github.com/ztr583/feature_based_icp.git
+[submodule "3rdparty/graspnet/graspnetAPI"]
+	path = 3rdparty/graspnet/graspnetAPI
+	url = https://github.com/graspnet/graspnetAPI.git

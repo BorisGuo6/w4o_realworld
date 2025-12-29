@@ -1,0 +1,27 @@
+# PyTorch with CUDA 11.8 support
+# Install with: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+torch>=2.3.1
+torchvision>=0.18.1
+
+# Other dependencies
+opencv-python
+pycocotools
+supervision
+numpy<2
+transformers
+yapf
+timm
+gymnasium
+
+# Google GenAI dependencies
+pydantic
+typing-extensions
+google-auth
+google-genai
+anyio
+httpx
+tenacity
+websockets
+
+# Grounded SAM dependencies
+addict

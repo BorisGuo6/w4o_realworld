@@ -1,0 +1,9 @@
+<robot name="xarm7">
+
+  <group name="xarm_gripper_base_link">
+    <chain base_link="link_base" tip="xarm_gripper_base_link"/>
+  </group>
+
+  <end_effector name="gripper_eef" parent_link="xarm_gripper_base_link" group="xarm_gripper_base_link"/>
+
+</robot>

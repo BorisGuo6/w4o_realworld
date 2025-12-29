@@ -1,0 +1,5 @@
+ckpt/checkpoint.tar.18
+/outputs/image_generation
+# /outputs/mask
+/outputs/reflector
+/outputs/synthesis
